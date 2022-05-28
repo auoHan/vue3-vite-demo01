@@ -1,9 +1,9 @@
-import http from '@/service/http'
-import * as types from './types'
+import {post} from '@/service/http'
+import {ILoginApi} from './types'
 
-const loginApi: types.ILoginApi = {
-  login(params) {
-    return http.post('/login',params)
+const loginApi: ILoginApi = {
+  login(data) {
+    return post('/login', data)
   }
 }
 export default loginApi
