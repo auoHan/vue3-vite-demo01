@@ -32,7 +32,7 @@ export default defineConfig({
     }),
     // 自动引入组件，包括element和components的组件
     Components({
-      dts: true,
+      dts: 'src/components.d.ts',
       // 因为使用了 unplugin-vue-components 插件，
       // 要写上这个，组件里才能用<router-link/> <router-view/>,其他配置看插件npm用法
       types: [
